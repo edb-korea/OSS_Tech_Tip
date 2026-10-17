@@ -77,3 +77,16 @@ sudo dnf clean all
 sudo dnf makecache
 sudo dnf repolist
 ```
+
+### ex) update new rpm at whpg local repo 
+```bash
+sudo cd /data/whpg-repo
+sudo dnf download edb-clickhouse-client edb-clickhouse-server edb-clickhouse-common-static edb-jdbc edb-odbc \
+edb-whpg7-anonymizer edb-whpg7-data-science-python311 edb-whpg7-data-science-r edb-whpg7-diskquota \
+edb-whpg7-hll edb-whpg7-madlib edb-whpg7-pgaa edb-whpg7-pgaudit edb-whpg7-pgfs edb-whpg7-pg_partman edb-whpg7-pgsphere \
+edb-whpg7-pgvector edb-whpg7-pljava edb-whpg7-plr edb-whpg7-postgis edb-whpg7-pxf edb-whpg7-q3c edb-whpg7-user_profile \
+edb-whpg7-utl-raw edb-whpg7-vectorplus edb-whpg7-whpg-cron edb-whpg7-whpg_fdw edb-whpg-copy edb-whpg-dr warehouse-pg-7 \
+warehouse-pg-7-clients whpg7-flow-server whpg-backup whpg-backup-ddboost-plugin whpg-enterprise-manager
+
+sudo createrepo /data/whpg-repo
+```
