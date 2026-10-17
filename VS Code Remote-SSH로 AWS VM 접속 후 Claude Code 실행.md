@@ -70,7 +70,9 @@ sudo dnf install -y nodejs npm
 
 node -v
 
-sudo npm install -g @anthropic-ai/claude-code
+npm config set allow-scripts=@anthropic-ai/claude-code --location=user
+npm install -g @anthropic-ai/claude-code
+claude --version
 ```
 
 권한 오류 시 `sudo npm install -g ...` 또는 npm 전역 경로를 홈 디렉터리로 변경하세요.
