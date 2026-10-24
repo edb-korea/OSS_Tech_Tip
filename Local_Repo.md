@@ -81,6 +81,11 @@ sudo dnf repolist
 ### ex) update new rpm at whpg local repo 
 ```bash
 sudo cd /data/whpg-repo
+sudo dnf install -y dnf-plugins-core && sudo dnf download --resolve --alldeps apr apr-util bash bzip2 curl iproute krb5-devel \
+libcgroup-tools libcurl libevent libuuid libuv libxml2 libyaml libzstd openldap openssh openssh-clients openssh-server openssl \
+openssl-libs perl python3 python3-psycopg2 python3-psutil python3-pyyaml python3.11 python3.11-devel \
+readline rsync sed tar which zip zlib --setopt=strict=0
+
 sudo dnf download edb-clickhouse-client edb-clickhouse-server edb-clickhouse-common-static edb-jdbc edb-odbc \
 edb-whpg7-anonymizer edb-whpg7-user_profile edb-whpg7-pgaudit edb-whpg7-pg_partman edb-whpg7-whpg-cron \
 edb-whpg7-pljava edb-whpg7-plr edb-whpg7-data-science-python311 edb-whpg7-data-science-r edb-whpg7-madlib \
