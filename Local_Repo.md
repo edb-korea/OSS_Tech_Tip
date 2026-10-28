@@ -93,8 +93,8 @@ edb-whpg7-diskquota whpg-backup whpg-backup-ddboost-plugin whpg7-flow-server edb
 edb-whpg7-pgaa edb-whpg7-pgfs edb-whpg7-pgvector edb-whpg7-vectorplus \
 edb-whpg7-postgis edb-whpg7-hll edb-whpg7-q3c edb-whpg7-pgsphere edb-whpg7-utl-raw edb-whpg7-whpg_fdw \
 warehouse-pg-7 warehouse-pg-7-clients edb-whpg7-pxf \
-whpg-enterprise-manager edb-acp-host-agent edb-otelcol 
-# edb-whpg7-orafce-ext edb-whpg7-cjk 
+whpg-enterprise-manager edb-acp-host-agent edb-otelcol edb-whpg7-cjk  edb-whpg7-aidb
+# edb-whpg7-orafce-ext 
 
 sudo createrepo /data/whpg-repo
 ```
